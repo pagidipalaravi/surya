@@ -1,0 +1,21 @@
+What is oracle jet?
+	Oracle jet is  used to develop client side applications. 
+ 	Its a collection of open source javascript libraries.
+ 	Oracle jet worked on Preact(Virtual DOM) or knockout(MVVM) based Architecture.
+ --
+
+ what is Model View ViewModel (MVVM) Architecture?
+    In MVVM, model represents the app data and the view is the presentation of data.
+    The ViewModel Exposes data from the model to the view.
+--
+
+Installation
+	First install node js v18.20.4
+	E:\work\nodejs\nodejs18.20.4
+  	Install the Oracle JET tooling
+    >npm -g i @oracle/ojet-cli
+How to Create JET App?
+	>npx @oracle/ojet-cli create <app name> --template=navdrawer||navbar||basic||blank --typescript
+How to run the JET APP?
+	>cd app-name
+	>npx ojet serve

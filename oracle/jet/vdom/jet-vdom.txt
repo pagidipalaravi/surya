@@ -1,0 +1,117 @@
+What is oracle jet?
+	Oracle jet is  used to develop client side applications. 
+ 	Its a collection of open source javascript libraries.
+ 	Oracle jet worked on Preact(Virtual DOM) or knockout(MVVM) based Architecture.
+ --
+What is Virtual DOM Architecture?
+	The new Virtual DOM used for building web components and complete web 
+	applications
+--
+Installation
+	First install node js v18.20.4
+	E:\work\nodejs\nodejs18.20.4
+  	Install the Oracle JET tooling
+    >npm -g i @oracle/ojet-cli
+How to Create JET App?
+	>npx @oracle/ojet-cli create app-name --template=basic --vdom
+How to run the JET APP?
+	>cd app-name
+	>npx ojet serve
+--
+What is Virtual DOM architecture?	
+    virtual representation of a DOM is kept in memory and 
+	synchronized with the live DOM by javascript library.
+	--
+	Preact is the javascript library that oracle Jet uses to update changes in 
+	virtual DOM to live DOM.
+	React is the one of javascript library to popularize the use of virtual DOM 
+	architecture.
+--
+What Can You Do with the Oracle JET Virtual DOM Architecture?
+	Once Oracle JET tooling creates the virtual DOM app for you, you can start 
+	to develop the functionality of the app.
+	To do this, you write TypeScript and JavaScript-XML (JSX). 
+Prerequisite Knowledge:
+	To develop virtual DOM apps and components you need to understand following 
+	topics.
+	Preact: 
+		understand how preact and by extension react works.
+	TypeScript and jsx: 
+		you write all virtual DOM apps and web components using 
+		typescript and jsx.
+What is the difference between VDOM and MVVM?
+	VDOM architecture uses jsx to implement binding and conditional behavior.
+	MVVM architecture implements in the view(html) layer.
+FAQs
+	What is difference between web apps and web components?
+	What is the difference between VDOM and MVVM architectures?
+2 Understand the Web App Workflow:
+
+  About the Virtual DOM App Layout
+	Oracle JET Tooling creates an app for you with the necessary source files and directory structure
+	
+	
+	node_modules: 
+		Contains the Node.js modules used by the tooling.
+	Scripts: 
+		Contains template hook scripts that you can modify to define new build and serve steps for your application.
+	src: 
+		Site root for your application. Contains the application files that you can modify as needed for your own application.
+	.gitignore: 
+		Defines rules for application folders to ignore when using a GIT repository to check in application source
+	oraclejetconfig.json: 
+		Contains the default source and staging file paths that you can modify if you need to change your application's file structure
+	package.json: 
+		Defines npm dependencies and project metadata.
+	
+ Oracle JET virtual DOM architecture uses modules to organize VComponents
+    Each custom element-based VComponent requires an accompanying loader.ts module file. 
+	Oracle JET Tooling includes this file as Oracle Visual Builder, 
+    the Oracle Component Exchange, and the Oracle JET Tooling itself require it.
+	
+	
+	
+ About the Binding Provider for Virtual DOM Apps:
+  Oracle JET's default binding provider is Knockout.
+  The binding provider that you use affects how Oracle JET custom elements render.
+  data-oj-binding-provider="knockout"
+  
+  When Oracle JET custom elements are used in a Preact environment (virtual DOM app), 
+   you must use the preact binding provider (data-oj-binding-provider="preact").
+   
+  Update the entry in the appRootDir/src/index.html file of your virtual DOM app
+
+ Note:The index.html file that the Oracle JET Tooling generates  no active binding provider.
+ 
+ 
+  
+  
+	
+ 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
