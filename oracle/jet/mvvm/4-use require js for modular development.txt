@@ -1,0 +1,18 @@
+About Oracle JET and RequireJS
+    RequireJS is a JavaScript file and module loader that simplifies managing library references 
+    and is designed to improve the speed and quality of your code
+    It is required if you use internalization or visualization components.
+
+About Oracle JET Module Organization
+    Your app can directly intract with module API and your app would call funtions on the return object
+    or instantiate new object via constructor.
+
+Use RequireJS in an Oracle JET App 
+    JET includes the RequireJS library and sample  main-template.js bootstrap file, you place 
+    the bootstrap file in app js directory and rename it to main.js.
+    In the bootstrap file or your app scripts, in the require() definition, 
+    add additional Oracle JET modules as needed.
+    
+    You can add third-party tools or libraries to your Oracle JET app.
+    Troubleshoot the Addition of Third-Party Tools and Libraries
+    Troubleshoot RequireJS in an Oracle JET App   

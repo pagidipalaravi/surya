@@ -3,29 +3,33 @@ About the app layout
     node_modules: 
 		Contains the Node.js modules used by the tooling.
 	Scripts: 
-		Contains template hook scripts that you can modify to define new build and serve steps for your application.
+		Contains template hook scripts that you can modify to define new build and serve steps for your 
+        application.
 	src: 
-		Site root for your application. Contains the application files that you can modify as needed for your own application.
+		Site root for your application. Contains the application files that you can modify as needed for your 
+        own application.
 	.gitignore: 
-		Defines rules for application folders to ignore when using a GIT repository to check in application source
+		Defines rules for application folders to ignore when using a GIT repository to check in application 
+        source
 	oraclejetconfig.json: 
-		Contains the default source and staging file paths that you can modify if you need to change your application's file structure
+		Contains the default source and staging file paths that you can modify if you need to change your 
+        application's file structure
 	package.json: 
-		Defines npm dependencies and project metadata.
+		
+        Defines npm dependencies and project metadata.
  --       
-
-
 About ojet serve Command Options and Express Middleware Functions
 
     Oracle JET tooling uses Express, a Node.js web app framework, 
     to set up and host the web app when you run ojet serve.
-    if ojet serve options not meet your requrements you can write middleware functions in before_serve.js hook point.
+    if ojet serve options not meet your requrements you can write middleware functions in before_serve.js hook 
+    point.
 
 what is before_serve.js hook point?
     it provide options to replace the existing middleware or instead prepend middleware funtion to the existing
     midleware.
     midleware fuctions: 
-        preMiddleware, postMiddleware, middleware.
+        preMiddleware, middleware, postMiddleware.
 default middleware added by oracle jet tooling.
     server-port: 
        server port number. if not specified, defaults to 8000.
@@ -47,11 +51,15 @@ default middleware added by oracle jet tooling.
 --
 
 how to Customize the Web App Tooling Workflow?
-    Hook points that oracle Jet tooling defines let you customize the behavior of the Jet build and serve processes.
+    Hook points that oracle Jet tooling defines let you customize the behavior of the Jet 
+    build and serve processes.
     ex: To trigger a script at the start of the tooling built process edit before_build.js script.
 
 About the Script Hook Points for Web Apps   
     The oracle Jet hook system defines various script trigger points called hook points.
-    that allows you to customize the create,build, serve, package and restore workflow.
+    that allows you to customize the create, build, serve, package and restore workflow.
     
+
+FAQs:
+What are hooks?
 

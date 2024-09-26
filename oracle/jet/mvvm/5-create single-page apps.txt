@@ -1,0 +1,14 @@
+Create Single-Page Apps
+    Using Knockout, oj-module component, and CoreRouter framework class, you can create single-page app.
+    Rather than using multiple web pages navigation, app uses single web page that is loaded only once.
+    JET includes support for single page apps using the CoreRouter class for virtual navigation in the page, 
+    the oj-module component for managing view templates and viewModel scripts,
+    Knockout for separating the model layer from the view layer and managing the binding between them.
+
+    When routing a single-page app, the page doesn't reload from scratch but the content of the page changes dynamically.
+    ex: browser history and bookmarks.
+
+    
+
+
+

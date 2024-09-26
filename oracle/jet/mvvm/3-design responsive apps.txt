@@ -1,0 +1,48 @@
+Oracle JET and Responsive Design
+    Responsive Design describes a concepts that uses fluid grids, scalable images, and media queries to 
+    present alternative layouts based on the media type.
+    oracle Jet includes CSS classes that supports a flexbox-based layout, 12-column Responsive grid system, 
+    Responsive form layout and javaScript.
+--
+Media queries
+    Media queries form the basis for responsive helper classes that show or hide content, align text
+    or float content based on screen wideth.
+    CSS3 media queries use the @media, media type and expression that evalute to true or false.
+--
+Oracle Jet Flex layouts
+    Use the oracle Jet oj-flex and oj-flex-item classes to create flexible box layouts based on css flexble 
+    box layout.
+    oj-flex is the parent class and add to a container element and oj-flex-item is the child element add the
+    container's children.
+
+About the Grid System
+    Oracle Jet provides 12 column responsive mobile-first grid system that you can use for 
+    responsive design.
+
+Responsive Form Layouts   
+    Oracle Jet provides oj-form-layout component, that you can use to create form layouts.
+     design for the smallest device first and then customize as needed for larger devices.
+     Add the applicable app flex, grid, form, and responsive classes.
+ --
+
+The Responsive JavaScript Classes
+    The ResponsiveUtils and ResponsiveKnockoutUtils responsive JavaScript classes provide methods.
+    That you can use in your app's JavaScript to obtain the current screen size.
+
+Create Responsive Images  
+    you can use the responsive javaScript classes to load a different image when the screen size changes.
+
+
+ FAQs
+ what is difference between flex layout and grid layout?
+
+
+
+
+     
+
+
+  
+
+
+
