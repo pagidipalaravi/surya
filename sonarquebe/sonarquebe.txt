@@ -1,0 +1,88 @@
+
+what is SonarQuebe?
+	It is an open source tool developed by SonarSource for continuous inspection of code quality,
+	perform automatic detection of static analysis of code to dectect bugs, code smells and 
+	security vulnerabilities on more than 25 programming languages.
+	SonarQuebe offers reports on duplicated code, coding standards, unit tests, code coverage,
+	code complexity, comments, bugs and security vulnerabilities.
+	
+SonarQuebe has 3 major components.
+   SonarQuebe scanner, server, database.`
+    how this components collaberate and what role it plays..
+
+ SonarQuebe scanner
+	Sonar suports more than 25 languages and sonar has standalone scanner.
+	Thats going to go over the code analize and get the report and send across report to the server.
+	It can be integrated with other build tools like Ant, Maven, jenkins,Gradle and MS build 
+	and generates the report and submit the report to the server.
+
+ 
+ SonarQuebe Server
+	Server is heart of sonarQuebe and where server has 3 sub components.
+	Compute engine, search server and web server.
+
+	Web Server:
+		Web server that going to provide web ui to the manager to browse the projects to see the status 
+	    about the various defects and to do the changes of status and configuration of sonarQuebe instance.
+		Webserver can be customized and adding more than number of plugins.
+
+		Plugins
+		Comes with multiple built in plugins for
+		.Language analyis
+		.SCM integration.
+		.Authentication and Autherization integration.
+		.Governance and External quality tools integration.
+		.Custom plugins as per organization requirement.
+			.For developers, managers to browse quality snapshots.
+			.Facilitate configuration of SonarQuebe instance.
+
+	Search Server:
+		Search server provides the option it retrieve the result faster and display it in the screen and
+	    it provide the result to the end user in the terms of where the vulnerability is
+	    and where the defect is.
+		.Powered by elastic Search
+
+	Compute Engine:
+		Compute engine is responsible for taking report from the scanner and analize the report and 
+	    store it in the database.
+		.Takes care of processing code analysis report.
+		.Saving the analysis report in database.
+		
+ SonarQuebe Database
+ 	SonarQuebe has build in database and in the production it can be integrated with exernal databases
+	 like MYSQL, ORACLE, POSTGRE, MS SQL.
+
+	.Only one instance exists.
+	.Supports Oracle, Mysql, Postgre and MS sql.
+	.Comes with built in database for testing perpose.
+	.Stores quality snapshots, view, rules, gateways, etc..
+
+
+	
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

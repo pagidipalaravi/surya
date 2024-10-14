@@ -1,0 +1,45 @@
+JET User Interface Components
+    JET provides a variety of user interface (UI) components that you can configure for use in your app.
+    JET Cookbook includes an example of each component for working with collections, controls, 
+    forms, visualizations, and other features.
+    JET currently has two sets of UI components.
+    The first set with components that use the oj- namespace are packaged in @oracle/oraclejet.
+    The newer Core Pack components, use the oj-c- namespace and are packaged in @oracle/oraclejet-core-pack.
+
+Work with Collections
+    Use JET data collection components to display data in tables, data grids, list views, or trees.
+    JET data collection components include oj-table, oj-data-grid, oj-tree, and oj-list-view, 
+    and you can use them to display records of data. oj-table and oj-data-grid both display 
+    data in rows and columns.
+
+DataProvider Filter Operators
+    The DataProvider interface is used to get runtime data for JET components that display list of items.
+    DataProvider implementations use filter operators for filtering.
+
+Work with Controls
+    JET includes buttons, menus, and container elements to control user actions or display progress 
+    against a task.
+
+    you can use the oj-button element as a standalone element or include in oj-buttonset , 
+    oj-menu, and oj-toolbar container elements.
+
+Work with Forms
+    JET includes classes to create responsive form layouts and components that you can add to your
+     form to manage labels, form validation and messaging, input, and selection.  
+
+Work with Layout and Navigation
+    Use JET oj-accordian, oj-collapsible, oj-dialog, oj-drawer-*, oj-flex*, oj-masonry-layout, 
+    oj-navigation-list, oj-panel, oj-popup, oj-size*, and oj-tab-bar components and patterns to control 
+    the initial data display and allow the user to access additional content by expanding sections, 
+    selecting tabs, or displaying dialogs and popups.
+
+Work with Visualizations
+    JET visualization components include charts, gauges, and other components that you can use and 
+    customize to present flat or hierarchical data in a graphical display for data analysis.    
+
+    
+
+        
+
+    
+

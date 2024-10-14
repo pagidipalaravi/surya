@@ -1,0 +1,41 @@
+Understand Oracle JET User Interface Basics
+    JET User Interface (UI) components extend the htmlElement prototype to implement the World Wide
+     Web Consortium (W3C) web component specification for custom elements.
+     Custom elements provide a more declarative way of working with JET components and allow you 
+     to access properties and methods.
+     JET includes components, patterns, and utilities to use in your app. 
+
+Common Functionality in Oracle JET Components
+    JET components are implemented as custom HTML elements.
+    these components is similar to interacting with any HTML elements.
+
+Custom Element Structure
+  JET custom element names start with oj-, or oj-c- for the newer Core Pack components, 
+   and you can add them to your page the same way you would add any other HTML element.
+
+    ex:
+        <div id="div1">
+        <oj-label for="dateTime">Default</oj-label>
+        <oj-input-date-time id="dateTime" value='{{value}}'>
+        </oj-input-date-time>
+        </div>
+    Attributes: Modifiers that affect the functionality of the element.
+    String literals will be parsed to the property type. JET supports the following string literal type
+     boolean, number, string, Object, Array, and any.
+
+      <oj-input-date-time id="dateTime" value='{{value}}'>
+      using a binding expression the element’s ViewModel should be 
+       if the attribute’s value is updated.
+
+       A custom element will be recognized only after its module is loaded by the app.
+       Once the element is recognized, JET will register a busy state for the element and
+       will begin the process of upgrading the element from a normal element to a custom element.
+
+About Binding and Control Flow
+    JET includes components and expressions to easily bind dynamic elements 
+    to a page in your app using Knockout. Use oj-bind-text to Bind Text Nodes.
+
+
+     
+          
+
